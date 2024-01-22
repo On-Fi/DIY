@@ -20,24 +20,24 @@ let gameOver = false;
 let score = 0;
 
 function createBG() {
-    context.fillStyle = "lightgreen";
+    context.fillStyle = "#6effee";
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
 function createSnake() {
     for (let i = 0; i < snake.length; i++) {
-        context.fillStyle = "green";
+        context.fillStyle = "#32a852";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
 function drawFood() {
-    context.fillStyle = "red";
+    context.fillStyle = "#e31960";
     context.fillRect(food.x, food.y, box, box);
 }
 
 function drawScore() {
-    context.fillStyle = "black";
+    context.fillStyle = "#002b26";
     context.font = "20px Arial";
     context.fillText("Score: " + score, box, box);
 }
